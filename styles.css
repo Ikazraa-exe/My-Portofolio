@@ -138,7 +138,7 @@ nav {
 
 /* Main content styles */
 main {
-  min-height: calc(100vh - 80px - 60px); /* Subtract header and footer height */
+  min-height: calc(100vh - 80px - 60px);
 }
 
 section {
