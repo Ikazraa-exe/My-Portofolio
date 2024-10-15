@@ -15,17 +15,27 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Zacky Khelfa</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="header-container">
+                <a href="index.html" class="logo">Zacky Khelfa</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Ikazraa-exe" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zacky-khelfa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,8 +43,8 @@
     <main role="main">
         <section id="contact" class="section contact">
             <div class="container">
-                <h2>Get in Touch</h2>
-                <form id="contact-form">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/mjkvvgrw" method="post" id="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
