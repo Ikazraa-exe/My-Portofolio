@@ -63,13 +63,28 @@ if (contactForm) {
         });
 
         if (valid) {
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
+            // Menggunakan fetch untuk mengirim data ke Formspree
+            fetch('https://formspree.io/f/xkgnnqod', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                } else {
+                    alert('There was an error submitting the form. Please try again.');
+                }
+            }).catch(error => {
+                alert('An unexpected error occurred. Please try again later.');
+                console.error('Error:', error);
+            });
         } else {
             alert('Please fill in all fields.');
         }
     });
 }
+
 
 // Sticky header with background color change on scroll
 const header = document.querySelector('header');
