@@ -17,9 +17,9 @@
     <header>
         <nav class="container">
             <div class="header-container">
-                <a href="#index" class="logo">Zacky Khelfa</a>
+                <a href="#home" class="logo">Zacky Khelfa</a>
                 <ul class="nav-links">
-                    <li><a href="#index">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -44,12 +44,12 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2 class="typing-text">Full Stack Developer & IT Consultant</h2>
-                    <p>Crafting innovative web solutions and providing expert IT consultancy</p>
+                    <h2 class="typing-text"></h2>
+                    <p>Crafting innovative website solutions and providing expert IT consultancy</p>
                     <a href="#contact" class="cta-button">Contact Me</a>
                 </div>
                 <div class="hero-image">
-                    <img src="img/zaki.jpg" alt="Zacky Khelfa" class="profile-pic">
+                    <img src="img/zaki.png" alt="Zacky Khelfa" class="profile-pic">
                 </div>
             </div>
             <section class="wave-section">
@@ -116,16 +116,30 @@
                 <div class="project-grid">
                     <div class="project-card">
                         <img src="img/project1.png" alt="Web Prodi TI">
-                        <h3>Web Prodi TI</h3>
+                        <h3>IT Study Program Website</h3>
                         <p>A comprehensive website for the D-III Information Technology Study Program at Politeknik
                             Aisyiyah Pontianak.</p>
                         <a href="https://github.com/Ikazraa-exe/web-proditi.git" class="project-link">View Project</a>
                     </div>
                     <div class="project-card">
                         <img src="img/project2.png" alt="Web Pengadilan Militer">
-                        <h3>Web Pengadilan Militer</h3>
+                        <h3>Military Court Website</h3>
                         <p>A full-stack website developed during an internship at the Pontianak Military Court.</p>
-                        <a href="https://github.com/Ikazraa-exe/Project-1.0.git" class="project-link">View Project</a>
+                        <a href="https://github.com/Ikazraa-exe/web-dilmil.git" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/project3.png" alt="Web Gamifikasi">
+                        <h3>1Upfarm Gamification Web</h3>
+                        <p>A collaborative web and mobile gamification project developed during the MSIB internship at
+                            Infinite Learning.</p>
+                        <a href="https://github.com/mesakhlolo/1UpFarm.git" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/project4.png" alt="Web Agenda & Surat-menyurat">
+                        <h3>Agenda & Correspondence Web</h3>
+                        <p>A full-stack web application for managing agendas and correspondence at Politeknik Aisyiyah
+                            Pontianak, built with Laravel Filament.</p>
+                        <a href="https://github.com/Ikazraa-exe/agenda-surat.git" class="project-link">View Project</a>
                     </div>
                 </div>
             </div>
@@ -146,9 +160,12 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 <a href="index" class="footer-link"><b>Zacky Khelfa</b></a>. All rights reserved.</p>
+            <p>©<span id="copyright-year"></span> <a href="index.html" class="footer-link"><b>Zacky Khelfa</b></a>. All
+                rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
